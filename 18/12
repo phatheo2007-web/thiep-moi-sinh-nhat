@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thiệp Mời Điện Tử</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        .card {
+            background: #fff;
+            max-width: 420px;
+            width: 90%;
+            padding: 30px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(30px);} 
+            to {opacity: 1; transform: translateY(0);} 
+        }
+        .card h1 {
+            color: #e91e63;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .card h2 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 20px;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+        .time-place {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 12px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #e91e63;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #d81b60;
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nhạc nền -->
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card">
+        <h1>💌 Thiệp Mời 💌</h1>
+        <h2>Trân trọng kính mời</h2>
+        <p><strong>Ông/Bà:</strong> Nguyễn Văn A</p>
+
+        <p>Đến tham dự buổi <strong>Sinh nhật</strong> của chúng tôi</p>
+
+        <div class="time-place">
+            <p><strong>⏰ Thời gian:</strong> 18h00, ngày 20/12/2025</p>
+            <p><strong>📍 Địa điểm:</strong> Số 123, Đường ABC, TP.HCM</p>
+        </div>
+
+        <p>Sự hiện diện của quý vị là niềm vinh hạnh cho chúng tôi.</p>
+
+        <!-- Nút xác nhận tham dự -->
+        <button onclick="xacNhan()">Xác nhận tham dự</button>
+
+        <div class="footer">
+            <p>Thân mời!</p>
+        </div>
+    </div>
+
+    <script>
+        function xacNhan() {
+            alert("Cảm ơn bạn đã xác nhận tham dự! 💖");
+        }
+    </script>
+</body>
+</html>
